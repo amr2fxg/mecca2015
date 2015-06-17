@@ -1,0 +1,1 @@
+mongo widmore.mongohq.com:10000/mecca -u admin -p mecca2014
