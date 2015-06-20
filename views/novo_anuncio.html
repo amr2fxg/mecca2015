@@ -10,49 +10,9 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-static-top" role="navigation">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Mecca</a>
-    </div>
+<% include _navbar.html %>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-          </span>
-        </div>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">?</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li><button type="submit" class="btn btn-default navbar-btn">vender</button></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container">
+<div class="container" id="novo_anuncio">
   <div class="page-header">
     <h1>Novo anúncio</h1>
   </div>
@@ -64,8 +24,20 @@
       <div class="row">
         <div class="col-xs-12">
           <input type="text" class="form-control" placeholder="Título do produto">
-          <textarea class="form-control" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <textarea class="form-control" rows="5" placeholder="Descrição"></textarea>    
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <input type="text" class="form-control" placeholder="Marca">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
           <input type="text" class="form-control" placeholder="Tags">
         </div>
       </div>
@@ -83,13 +55,9 @@
       </div>
       <div class="row" id="condicao">
         <div class="col-xs-12">
-          <div class="btn-group btn-group-justified" role="group" aria-label="...">
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default">Novo</button>
-            </div>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-default">Usado</button>
-            </div>
+          <div class="btn-group btn-group-justified" data-toggle="buttons">
+            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoNovo">Novo</label>
+            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoUsado">Usado</label>
           </div>
         </div>
       </div>

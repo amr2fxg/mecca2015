@@ -4,7 +4,18 @@
    Author's custom styles
    ========================================================================== */
 
+// COLORS
+// --------------------------------------------------------------------------
+
+$menu: #e6eaf0;
+$bg: #f5f6f9;
+
+$azul: #357ae8;
+$verde: #39b54a;
+$dark: #3e3e3e;
+
 body {
+	background-color: $bg;
 	padding-bottom: 20px;
 }
 
@@ -12,6 +23,10 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	margin-bottom: 0;
+	background-color: $menu;
+	.navbar-brand {
+		padding: 5px 15px;
+	}
 }
 
 
@@ -19,7 +34,8 @@ body {
 	padding: 0;
 }
 
-
+// pages
+@import "novo_anuncio";
 
 
 
