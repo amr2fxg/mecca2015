@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
   <% include _head.html %>
+
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -25,14 +26,18 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search" name="search" id="search" method="GET" action="localhost:5000/busca" autocomplete="off">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Search for...">
+          <input type="text" class="form-control" placeholder="Search for..." autocomplete="off" tabIndex=1 id="s" name="s">
+          <input type="text" class="txtSearch" id="ss" disabled autocomplete="off" aria-hidden="true" hidden="true">
           <span class="input-group-btn">
             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
           </span>
         </div>
+      <!-- DIV QUE MOSTRA OS RESULTADOS DO INSTANT-SEARCH -->
+      <div id="results"></div>
       </form>
+      
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">?</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
@@ -203,6 +208,7 @@
 </div>
 <% include _scripts.html %>
 
+<div id="user_info" class="hidden"><%= auth %></div>
 <!-- Google Analytics -->
 <% include _ga.html %>
 </body>
