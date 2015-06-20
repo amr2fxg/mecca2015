@@ -23,6 +23,14 @@ exports.home = function(req, res){
 };
 
 
+//////////////////////////////////////////////////////////////  Anuncio
+exports.anuncio = function(req, res){
+  
+  res.render('novo_anuncio', {lastView: req.session.lastView} );
+
+};
+
+
 //////////////////////////////////////////////////////////////  Menu
 exports.menu = function(req, res){
   

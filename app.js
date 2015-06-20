@@ -58,6 +58,7 @@ app.use(app.router);
 
 // Routes
 app.get('/', routes.index);
+app.get('/anuncio', routes.anuncio);
 app.get('/menu', routes.menu);
 app.get('/busca/*', routes.busca);
 app.post('/instant/*', routes.instant);
