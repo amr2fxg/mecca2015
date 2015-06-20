@@ -106,48 +106,46 @@
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <select class="selectpicker" title='Departamento'>
+          <select class="selectpicker" data-width="100%" title="Departamento" id="departamento">
             <option>Moças</option>
             <option>Rapazes</option>
             <option>Kids</option>
             <option>Casa</option>
             <option>Info&Eletro</option>
             <option>Etc&Tal</option>
+          </select>
+        </div>
+      </div>
+      <div class="row hidden">
+        <div class="col-xs-12">
+          <select class="selectpicker" data-width="100%" title="Categoria" id="categoria">
+            <option>-</option>
+          </select>
+        </div>
+      </div>
+      <div class="row hidden">
+        <div class="col-xs-12">
+          <select class="selectpicker" data-width="100%" title="Sub-categoria" id="subcategoria">
+            <option>--</option>
           </select>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <select class="selectpicker" title='Categoria'>
-            <option>Moças</option>
-            <option>Rapazes</option>
-            <option>Kids</option>
-            <option>Casa</option>
-            <option>Info&Eletro</option>
-            <option>Etc&Tal</option>
+          <select class="selectpicker" data-width="100%" title="Opções de Frete" id="frete">
+            <option value="emmaos">Entregar em mãos</option>
+            <option value="peso">Cobrar por peso</option>
+            <option value="gratis">Frete grátis</option>
           </select>
         </div>
       </div>
-      <div class="row">
+      <div class="row hidden">
         <div class="col-xs-12">
-          <select class="selectpicker" title='Sub-categoria'>
-            <option>Moças</option>
-            <option>Rapazes</option>
-            <option>Kids</option>
-            <option>Casa</option>
-            <option>Info&Eletro</option>
-            <option>Etc&Tal</option>
+          <select class="selectpicker" data-width="100%" title="Escolha a região" id="frete_gratis_regiao">
+            <option>Para todo o Brasil</option>
+            <option>Para o seu Estado</option>
+            <option>Para a sua Cidade</option>
           </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h4>Opções de Frete</h4>
-          <div class="list-group">
-            <button type="button" class="list-group-item">Entregar em mãos</button>
-            <button type="button" class="list-group-item">Cobrar por peso</button>
-            <button type="button" class="list-group-item">Frete grátis</button>
-          </div>
         </div>
       </div>
     </div>
@@ -167,7 +165,7 @@
 
 <script src="js/vendor/bootstrap.min.js"></script>
 
-<script src="js/main.js"></script>
+<script src="js/novo_anuncio.js"></script>
 
 <!-- Google Analytics -->
 </body>
