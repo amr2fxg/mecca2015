@@ -1,0 +1,5 @@
+<ul>
+	<% anuncios.forEach(function( a ){ %>
+	<li><a href="compre/<%= a.cleanurl%>"><%= a.titulo %></a> <b><%= a.valor %></b></li>
+	<% }); %>
+</ul>
