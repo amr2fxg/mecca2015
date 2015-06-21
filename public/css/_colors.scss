@@ -1,0 +1,41 @@
+// COLORS
+// --------------------------------------------------------------------------
+
+$menu: #e6eaf0;
+$bgh: #f5f6f9;
+$bgm: #e1e6ed;
+$bgd: #cdd5e0;
+
+$azul: #357ae8;
+$verde: #39b54a;
+
+$cm: #8795a9;
+$cd: #3e3e3e;
+
+@mixin ch {
+	background-color: #f5f5f5;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#e5e5e5));
+	background-image: -webkit-linear-gradient(top, whitesmoke, #e5e5e5);
+	background-image: -moz-linear-gradient(top, whitesmoke, #e5e5e5);
+	background-image: -ms-linear-gradient(top, whitesmoke, #e5e5e5);
+	background-image: -o-linear-gradient(top, whitesmoke, #e5e5e5);
+	background-image: linear-gradient(top, whitesmoke, #e5e5e5);
+}
+
+@mixin chH {
+	background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dedede));
+	background-image: -webkit-linear-gradient(top, white, #dedede);
+	background-image: -moz-linear-gradient(top, white, #dedede);
+	background-image: -ms-linear-gradient(top, white, #dedede);
+	background-image: -o-linear-gradient(top, white, #dedede);
+	background-image: linear-gradient(top, white, #dedede);
+}
+
+// qualificações
+$q5: #39b54a; // q95
+$q4: #8dc63f; // q90
+$q3: #eab916; // q80
+$q2: #f7941d; // q70
+$q1: #f1592a; // q60
+$q0: #de3232; // q50

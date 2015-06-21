@@ -1,0 +1,53 @@
+body {
+	background-color: $bgh;
+	padding-bottom: 20px;
+}
+
+.form-control:focus {
+	border-color: #999;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.navbar {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0;
+	background-color: $menu;
+	.navbar-brand {
+		padding: 5px 15px;
+	}
+	#search {
+		#buscar {
+			padding: 7px 20px;
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+		}
+	}
+	.navbar-nav {
+		.open > a, .open > a:hover, .open > a:focus {
+			background-color: transparent;
+			.fa {
+				color: $azul;
+			}
+		}	
+		li a {
+			padding: 10px 15px;
+			.fa {
+				color: $cd;
+			}	
+			&:hover, &:focus {
+				background-color: transparent;
+				.fa {
+					color: $azul;
+				}
+			}
+		}
+	} 
+	#vender {
+		margin-left: 20px;
+		padding: 6px 20px;
+		font-size: 1.1em;
+	}
+}

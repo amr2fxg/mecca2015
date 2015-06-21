@@ -1,0 +1,84 @@
+// BUTTONS
+// --------------------------------------------------------------------------
+
+// reset gradient
+@mixin gReset($color:transparent) {
+    background-color:$color;
+    background-image: none;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+// base button
+%btn-mecca {
+	border-radius: 0;
+	border: none;
+	font-family: "Oswald";
+	// font-size: 0.9em;
+	text-transform: uppercase;
+	&:hover {
+		background-position: 0 0;
+	}
+}
+
+// buttons
+.btn-ch {
+	@extend %btn-mecca;
+	@include ch;
+	color: $cm;
+	&:hover { color: $cm; @include gReset; }
+}
+
+.btn-cm {
+	@extend %btn-mecca;
+	background-color: $cm;
+	color: #fff;
+	&:hover { color: #fff; }
+}
+
+.btn-cd {
+	@extend %btn-mecca;
+	background-color: $cd;
+	color: #fff;
+	&:hover { color: #fff; }
+}
+
+.btn-a {
+	@extend %btn-mecca;
+	background-color: $azul;
+	color: #fff;
+	&:hover { color: #fff; }
+}
+
+.btn-v {
+	@extend %btn-mecca;
+	background-color: $verde;
+	color: #fff;
+	&:hover { color: #fff; }
+}
+
+// hovers
+.btn-chH:hover {
+	@include chH;
+	color: $azul;
+}
+
+.btn-cmH:hover {
+	background-color: $cm;
+	color: #fff;
+}
+
+.btn-cdH:hover {
+	background-color: $cd;
+	color: #fff;
+}
+
+.btn-aH:hover {
+	background-color: $azul;
+	color: #fff;
+}
+
+.btn-vH:hover {
+	background-color: $verde;
+	color: #fff;
+}
