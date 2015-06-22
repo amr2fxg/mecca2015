@@ -7,6 +7,18 @@
 		resize: none;
 	}
 
+	.cor-preto, .cor-preto:hover { background-color: $cd !important; color: #fff !important; @include gReset; }
+	.cor-branco, .cor-branco:hover { @include gReset; }
+	.cor-cinza, .cor-cinza:hover { background-color: #ccc !important; color: #000 !important; @include gReset; }
+	.cor-azul, .cor-azul:hover { background-color: $azul !important; color: #fff !important; @include gReset; }
+	.cor-marrom, .cor-marrom:hover { background-color: #b87d61 !important; color: #fff !important; @include gReset; }
+	.cor-rosa, .cor-rosa:hover { background-color: #e657a8 !important; color: #fff !important; @include gReset; }
+	.cor-vermelho, .cor-vermelho:hover { background-color: $q0 !important; color: #fff !important; @include gReset; }
+	.cor-verde, .cor-verde:hover { background-color: $verde !important; color: #fff !important; @include gReset; }
+	.cor-amarelo, .cor-amarelo:hover { background-color: $q3 !important; color: #000 !important; @include gReset; }
+	.cor-colorido, .cor-colorido:hover { @include gReset; }
+	
+
 	#condicao {
 		.active {
 			-webkit-box-shadow: none;
@@ -16,5 +28,15 @@
 			color: #fff;
 			text-shadow: none;
 		}
+		.btn-group > .btn:last-child {
+			border-left: none;
+		}
+	}
+
+	#segmento, #envio {
+		.row {
+			margin-bottom: 5px;
+		}
 	}
 }
+

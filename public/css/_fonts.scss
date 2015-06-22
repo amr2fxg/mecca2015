@@ -2,10 +2,8 @@
 // --------------------------------------------------------------------------
 
 @import "font-awesome/font-awesome";
-
-@font-face {
-  font-family: 'Oswald';
-  src: local('☺'), url('../fonts/Oswald-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+// @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+// @import url(http://fonts.googleapis.com/css?family=Monda);
+// @import url(http://fonts.googleapis.com/css?family=Maven+Pro);

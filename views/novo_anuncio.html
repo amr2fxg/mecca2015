@@ -14,7 +14,7 @@
 
 <div class="container" id="novo_anuncio">
   <div class="page-header">
-    <h1>Novo anúncio</h1>
+    <h2>Novo produto</h2>
   </div>
   <div class="row">
     <div class="col-md-5">
@@ -23,86 +23,136 @@
     <div class="col-md-4">
       <div class="row">
         <div class="col-xs-12">
-          <input type="text" class="form-control" placeholder="Título do produto">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <textarea class="form-control" rows="5" placeholder="Descrição"></textarea>    
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <input type="text" class="form-control" placeholder="Marca">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <input type="text" class="form-control" placeholder="Tags">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h4>Cores</h4>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="row">
-        <div class="col-xs-4"><input type="text" class="form-control" placeholder="R$"></div>
-        <div class="col-xs-4"><input type="text" class="form-control" placeholder="Qtd"></div>
-        <div class="col-xs-4"><input type="text" class="form-control" placeholder="Kg"></div>
-      </div>
-      <div class="row" id="condicao">
-        <div class="col-xs-12">
-          <div class="btn-group btn-group-justified" data-toggle="buttons">
-            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoNovo">Novo</label>
-            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoUsado">Usado</label>
+          <div class="form-group">
+            <label for="titulo">Título do Produto</label>
+            <input type="text" class="form-control" placeholder="5-30 caracteres" id="titulo">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <select class="selectpicker" data-width="100%" title="Departamento" id="departamento">
-            <option>Moças</option>
-            <option>Rapazes</option>
-            <option>Kids</option>
-            <option>Casa</option>
-            <option>Info&Eletro</option>
-            <option>Etc&Tal</option>
-          </select>
-        </div>
-      </div>
-      <div class="row hidden">
-        <div class="col-xs-12">
-          <select class="selectpicker" data-width="100%" title="Categoria" id="categoria">
-            <option>-</option>
-          </select>
-        </div>
-      </div>
-      <div class="row hidden">
-        <div class="col-xs-12">
-          <select class="selectpicker" data-width="100%" title="Sub-categoria" id="subcategoria">
-            <option>--</option>
-          </select>
+          <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <textarea class="form-control" rows="5" placeholder="25-300 caracteres" id="descricao"></textarea>    
+          </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12">
-          <select class="selectpicker" data-width="100%" title="Opções de Frete" id="frete">
-            <option value="emmaos">Entregar em mãos</option>
-            <option value="peso">Cobrar por peso</option>
-            <option value="gratis">Frete grátis</option>
+          <div class="form-group">
+            <label for="marca">Marca</label>
+            <input type="text" class="form-control" placeholder="Marca" id="marca">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="tags">Tags</label>
+            <input type="text" class="form-control" placeholder="Tags" id="tags">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <label for="cores">Cores</label>
+          <select class="selectpicker" data-width="100%" multiple title="" id="cores">
+            <option class="cor-preto">Preto</option>
+            <option class="cor-branco">Branco</option>
+            <option class="cor-cinza">Cinza</option>
+            <option class="cor-azul">Azul</option>
+            <option class="cor-marrom">Marrom</option>
+            <option class="cor-rosa">Rosa</option>
+            <option class="cor-vermelho">Vermelho</option>
+            <option class="cor-verde">Verde</option>
+            <option class="cor-amarelo">Amarelo</option>
+            <option class="cor-colorido">Colorido</option>
           </select>
         </div>
       </div>
-      <div class="row hidden">
+    </div>
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-xs-4">
+          <div class="form-group">
+            <label for="preco">Preço</label>
+            <input type="text" class="form-control" placeholder="" id="preco">
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <label for="qtde">Qtde</label>
+            <input type="text" class="form-control" placeholder="1-10" id="qtde">
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="form-group">
+            <label for="peso">Peso</label>
+            <input type="text" class="form-control" placeholder="Kg" id="peso">
+          </div>
+        </div>
+      </div>
+      <div class="row" id="condicao">
         <div class="col-xs-12">
-          <select class="selectpicker" data-width="100%" title="Escolha a região" id="frete_gratis_regiao">
-            <option>Para todo o Brasil</option>
-            <option>Para o seu Estado</option>
-            <option>Para a sua Cidade</option>
-          </select>
+          <label for="condicao">Condição</label>
+          <div class="btn-group btn-group-justified" data-toggle="buttons" id="condicao">
+            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoNovo">Novo</label>
+            <label class="btn btn-default"><input type="radio" name="condicao" id="condicaoUsado">Usado</label>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="segmento">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="departamento">Categoria</label>
+              <select class="selectpicker" data-width="100%" title="Departamento" id="departamento">
+                <option>Moças</option>
+                <option>Rapazes</option>
+                <option>Kids</option>
+                <option>Casa</option>
+                <option>Info&Eletro</option>
+                <option>Etc&Tal</option>
+              </select>
+            </div>
+          </div>
+          <div class="row hidden">
+            <div class="col-xs-12">
+              <select class="selectpicker" data-width="100%" title="Categoria" id="categoria">
+                <option>-</option>
+              </select>
+            </div>
+          </div>
+          <div class="row hidden">
+            <div class="col-xs-12">
+              <select class="selectpicker" data-width="100%" title="Sub-categoria" id="subcategoria">
+                <option>--</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="envio">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <label for="frete">Envio</label>
+              <select class="selectpicker" data-width="100%" title="Opções de Frete" id="frete">
+                <option value="emmaos">Entregar em mãos</option>
+                <option value="peso">Cobrar por peso</option>
+                <option value="gratis">Frete grátis</option>
+              </select>
+            </div>
+          </div>
+          <div class="row hidden">
+            <div class="col-xs-12">
+              <select class="selectpicker" data-width="100%" title="Escolha a região" id="frete_gratis_regiao">
+                <option>Para todo o Brasil</option>
+                <option>Para o seu Estado</option>
+                <option>Para a sua Cidade</option>
+              </select>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -112,11 +162,9 @@
       <button class="btn btn-lg btn-a btn-vH" type="submit">Enviar</button>
     </div>
   </div>
-
-  <hr>
-  <% include _footer.html %>
-  
 </div>
+<% include _footer.html %>
+
 <% include _scripts.html %>
 <script src="js/novo_anuncio.js"></script>
 

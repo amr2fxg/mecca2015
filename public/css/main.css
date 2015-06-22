@@ -5,6 +5,8 @@
  * Copyright 2013-2015 bootstrap-select
  * Licensed under MIT (https://github.com/silviomoreto/bootstrap-select/blob/master/LICENSE)
  */
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
 .bootstrap-select { width: 220px \0; /*IE9 and below*/ }
 
 .bootstrap-select > .dropdown-toggle { width: 100%; padding-right: 25px; }
@@ -1215,8 +1217,7 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 
 .fa-medium:before { content: ""; }
 
-@font-face { font-family: 'Oswald'; src: local("Ôÿ║"), url("../fonts/Oswald-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.btn-ch, .btn-cm, .btn-cd, .btn-a, .btn-v { border-radius: 0; border: none; font-family: "Oswald"; text-transform: uppercase; }
+.btn-ch, .btn-cm, .btn-cd, .btn-a, .btn-v { border-radius: 0; border: none; font-family: "Oswald"; padding: 0.6em 0.9em 0.5em 0.9em; text-transform: uppercase; }
 .btn-ch:hover, .btn-cm:hover, .btn-cd:hover, .btn-a:hover, .btn-v:hover { background-position: 0 0; }
 
 .btn-ch { background-color: #f5f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#e5e5e5)); background-image: -webkit-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -moz-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -ms-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -o-linear-gradient(top, whitesmoke, #e5e5e5); background-image: linear-gradient(top, whitesmoke, #e5e5e5); color: #8795a9; }
@@ -1234,7 +1235,7 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 .btn-v { background-color: #39b54a; color: #fff; }
 .btn-v:hover { color: #fff; }
 
-.btn-chH:hover { background-color: #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dedede)); background-image: -webkit-linear-gradient(top, white, #dedede); background-image: -moz-linear-gradient(top, white, #dedede); background-image: -ms-linear-gradient(top, white, #dedede); background-image: -o-linear-gradient(top, white, #dedede); background-image: linear-gradient(top, white, #dedede); color: #357ae8; }
+.btn-chH:hover { background-color: #ffffff; background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#dedede)); background-image: -webkit-linear-gradient(top, white, #dedede); background-image: -moz-linear-gradient(top, white, #dedede); background-image: -ms-linear-gradient(top, white, #dedede); background-image: -o-linear-gradient(top, white, #dedede); color: #357ae8; }
 
 .btn-cmH:hover { background-color: #8795a9; color: #fff; }
 
@@ -1244,13 +1245,17 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 
 .btn-vH:hover { background-color: #39b54a; color: #fff; }
 
-body { background-color: #f5f6f9; padding-bottom: 20px; }
+* { font-family: "PT Sans"; }
+
+body { background-color: #f5f6f9; }
 
 .form-control:focus { border-color: #999; outline: 0; -webkit-box-shadow: none; box-shadow: none; }
 
+.page-header { color: #357ae8; font-family: "Oswald"; text-transform: uppercase; text-align: center; }
+
 .navbar { padding-top: 10px; padding-bottom: 10px; margin-bottom: 0; background-color: #e6eaf0; }
 .navbar .navbar-brand { padding: 5px 15px; }
-.navbar #search #buscar { padding: 7px 20px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
+.navbar #search #buscar { padding: 6px 20px 8px 20px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; }
 .navbar .navbar-nav .open > a, .navbar .navbar-nav .open > a:hover, .navbar .navbar-nav .open > a:focus { background-color: transparent; }
 .navbar .navbar-nav .open > a .fa, .navbar .navbar-nav .open > a:hover .fa, .navbar .navbar-nav .open > a:focus .fa { color: #357ae8; }
 .navbar .navbar-nav li a { padding: 10px 15px; }
@@ -1259,12 +1264,42 @@ body { background-color: #f5f6f9; padding-bottom: 20px; }
 .navbar .navbar-nav li a:hover .fa, .navbar .navbar-nav li a:focus .fa { color: #357ae8; }
 .navbar #vender { margin-left: 20px; padding: 6px 20px; font-size: 1.1em; }
 
+footer #footer { background-color: #e6eaf0; margin-top: 50px; padding: 50px 0px 40px 0px; }
+footer #footer h3 { font-family: "Oswald"; text-transform: uppercase; color: #357ae8; margin-bottom: 20px; margin-top: 0px; }
+footer #footer ul.list-unstyled li { margin-bottom: 5px; }
+footer #footer ul.list-unstyled li:last-child { margin-bottom: 0px; }
+footer #footer ul.list-unstyled li a { color: #3e3e3e; text-decoration: none; }
+footer #footer ul.list-unstyled li a:hover { color: #000; }
+footer #footer ul#social li a { color: #8795a9; }
+footer #footer ul#social li a .fa { font-size: 1.5em; }
+footer #footer ul#social li a:hover .fa-facebook { color: #3a5795; }
+footer #footer ul#social li a:hover .fa-twitter { color: #22a5dd; }
+footer #footer ul#social li a:hover .fa-pinterest-p { color: #d73532; }
+footer #footer ul#social li a:hover .fa-instagram { color: #125688; }
+footer #footer ul#social li a:hover .fa-tumblr { color: #36465d; }
+footer #footer ul#social li a:hover .fa-google-plus { color: #333333; }
+footer #legal { background-color: #f5f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#e5e5e5)); background-image: -webkit-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -moz-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -ms-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -o-linear-gradient(top, whitesmoke, #e5e5e5); background-image: linear-gradient(top, whitesmoke, #e5e5e5); color: #3e3e3e; padding: 20px 0px; font-size: 0.9em; }
+footer #legal a { color: #3e3e3e; text-decoration: none; }
+footer #legal a:hover { color: #357ae8; }
+
 .jumbotron { background-color: #cdd5e0; }
 
 .panel-body { padding: 0; }
 
 #novo_anuncio .row { margin-bottom: 20px; }
 #novo_anuncio textarea { resize: none; }
+#novo_anuncio .cor-preto, #novo_anuncio .cor-preto:hover { background-color: #3e3e3e !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-branco, #novo_anuncio .cor-branco:hover { background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-cinza, #novo_anuncio .cor-cinza:hover { background-color: #ccc !important; color: #000 !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-azul, #novo_anuncio .cor-azul:hover { background-color: #357ae8 !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-marrom, #novo_anuncio .cor-marrom:hover { background-color: #b87d61 !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-rosa, #novo_anuncio .cor-rosa:hover { background-color: #e657a8 !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-vermelho, #novo_anuncio .cor-vermelho:hover { background-color: #de3232 !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-verde, #novo_anuncio .cor-verde:hover { background-color: #39b54a !important; color: #fff !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-amarelo, #novo_anuncio .cor-amarelo:hover { background-color: #eab916 !important; color: #000 !important; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
+#novo_anuncio .cor-colorido, #novo_anuncio .cor-colorido:hover { background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
 #novo_anuncio #condicao .active { -webkit-box-shadow: none; box-shadow: none; background-color: #357ae8; border-color: #357ae8; color: #fff; text-shadow: none; }
+#novo_anuncio #condicao .btn-group > .btn:last-child { border-left: none; }
+#novo_anuncio #segmento .row, #novo_anuncio #envio .row { margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */

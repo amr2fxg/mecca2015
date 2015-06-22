@@ -222,8 +222,6 @@ data/
 
 # RAFA STUFF
 # -------------------------
-#cmd lnk
 *.lnk
-
 mecca.cmd
 live_reload.cmd
