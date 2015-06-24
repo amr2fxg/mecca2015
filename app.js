@@ -62,7 +62,7 @@ app.get('/anuncio', routes.anuncio);
 app.get('/menu', routes.menu);
 app.get('/busca/*', routes.busca);
 app.post('/instant/*', routes.instant);
-app.post('/home', routes.home);
+app.get('/home', routes.home);
 app.post('/user/auth', user.auth);
 app.get('/user/login', user.login);
 app.get('/user/logout', user.logout);

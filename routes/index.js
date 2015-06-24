@@ -17,8 +17,24 @@ exports.index =  function(req, res){
 //////////////////////////////////////////////////////////////  Homepage
 exports.home = function(req, res){
   
-  req.session.lastView = req.host + '/home.html';
-  res.render('home', {lastView: req.session.lastView} );
+	require('../models/anuncios');
+	
+	var mAnuncios = mongoose.model('anuncios');
+  	
+  	console.log("RECEBI O GET");
+	// busca os 12 primeiros anuncios patrocinados 
+	mAnuncios.find( {patrocinado: 1}, {titulo:1, valor:1, cleanurl :1, _id:0}, {limit: 12}, function(err, anuncios) {
+
+	
+			if(err || (anuncios=='')){
+				res.send('', 200);
+			}else {
+
+				res.json(anuncios);
+			}
+
+	}).sort({score: -1});
+
 
 };
 
