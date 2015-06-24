@@ -1217,8 +1217,8 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 
 .fa-medium:before { content: ""; }
 
-.btn-ch, .btn-cm, .btn-cd, .btn-a, .btn-v { border-radius: 0; border: none; font-family: "Oswald"; padding: 0.6em 0.9em 0.5em 0.9em; text-transform: uppercase; }
-.btn-ch:hover, .btn-cm:hover, .btn-cd:hover, .btn-a:hover, .btn-v:hover { background-position: 0 0; }
+.btn-ch, .btn-cm, .btn-cd, .btn-a, .navbar #vender, .btn-v { border-radius: 0; border: none; font-family: "Oswald"; padding: 0.6em 0.9em 0.5em 0.9em; text-transform: uppercase; }
+.btn-ch:hover, .btn-cm:hover, .btn-cd:hover, .btn-a:hover, .navbar #vender:hover, .btn-v:hover { background-position: 0 0; }
 
 .btn-ch { background-color: #f5f5f5; background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#e5e5e5)); background-image: -webkit-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -moz-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -ms-linear-gradient(top, whitesmoke, #e5e5e5); background-image: -o-linear-gradient(top, whitesmoke, #e5e5e5); background-image: linear-gradient(top, whitesmoke, #e5e5e5); color: #8795a9; }
 .btn-ch:hover { color: #8795a9; background-color: transparent; background-image: none; background-repeat: no-repeat; filter: none; }
@@ -1229,8 +1229,8 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 .btn-cd { background-color: #3e3e3e; color: #fff; }
 .btn-cd:hover { color: #fff; }
 
-.btn-a { background-color: #357ae8; color: #fff; }
-.btn-a:hover { color: #fff; }
+.btn-a, .navbar #vender { background-color: #357ae8; color: #fff; }
+.btn-a:hover, .navbar #vender:hover { color: #fff; }
 
 .btn-v { background-color: #39b54a; color: #fff; }
 .btn-v:hover { color: #fff; }
@@ -1243,7 +1243,7 @@ select.mobile-device { position: absolute !important; top: 0; left: 0; display: 
 
 .btn-aH:hover { background-color: #357ae8; color: #fff; }
 
-.btn-vH:hover { background-color: #39b54a; color: #fff; }
+.btn-vH:hover, .navbar #vender:hover { background-color: #39b54a; color: #fff; }
 
 * { font-family: "PT Sans"; }
 

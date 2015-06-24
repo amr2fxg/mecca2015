@@ -65,6 +65,10 @@ body {
 		margin-left: 20px;
 		padding: 6px 20px;
 		font-size: 1.1em;
+		@extend .btn-a;
+		&:hover, &:focus {
+			@extend .btn-vH;
+		}
 	}
 }
 
