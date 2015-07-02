@@ -2,6 +2,45 @@
 	background-color: $bgd;
 }
 
-.panel-body {
-	padding: 0;
+.produto {
+	a {
+		text-decoration: none;
+	}
+	.panel {
+		border: none;
+		.panel-body {
+			border-radius: 0;
+			padding: 0;
+		}
+		.panel-footer {
+			@include ch;
+			border-radius: 0;
+			.title {
+				position: relative;
+				font-size: 1.15em;
+				text-transform: capitalize;
+				color: $cd;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.price {
+				color: $azul;
+				font-weight: bold;
+				font-size: 1.2em;
+				.orig {
+					color: $cm;
+					font-size: 0.9em;
+					text-decoration: line-through;
+				}
+			}
+		}
+	}
+	&:hover {
+		.panel-footer {
+			@include chH;
+			.title {
+				color: #000;
+			}
+		}
+	}
 }

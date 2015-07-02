@@ -65,6 +65,10 @@ body {
 		margin-left: 20px;
 		padding: 6px 20px;
 		font-size: 1.1em;
+		@extend .btn-a;
+		&:hover, &:focus {
+			@extend .btn-vH;
+		}
 	}
 }
 
@@ -74,7 +78,7 @@ footer {
 		background-color: $menu;
 		margin-top: 50px;
 		padding: 50px 0px 40px 0px;
-		h3 {
+		h4 {
 			font-family: "Oswald";
 			text-transform: uppercase;
 			color: $azul;
