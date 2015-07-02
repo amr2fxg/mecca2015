@@ -17,13 +17,25 @@ var express = require('express'),
 	io 		= require('./lib/sockets').listen(server),
 
 	mongoose  = require('mongoose'),
+	uriUtil = require('mongodb-uri'),
 
+	options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
+				replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } },
 	oneDay = 86400, //24 * 60 * 60
 	oneYear = 315576000; // 365 * 24 * 60 * 60
 
+//var	mongooseUri = uriUtil.formatMongoose('mongodb://admin:m3cc4%@ds063218.mongolab.com:63218/mecca');
 
-mongoose.connect('mongodb://admin:m3cc4%@ds063218.mongolab.com:63218/mecca');
+mongoose.connect('mongodb://admin:meccaadmin@ds063218.mongolab.com:63218/mecca2015', options);
+//mongoose.connect('mongodb://localhost/mecca', options);
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+
+//mongoose.connect('mongodb://admin:m3cc4%@ds063218.mongolab.com:63218/mecca');
+//mongoose.connect('mongodb://localhost/mecca');
 //mongoose.model('YourModelName', require('./models/yourmodelname').YourModelName;
+
 
 // all environments
 app.set('port', process.env.PORT || 5000);

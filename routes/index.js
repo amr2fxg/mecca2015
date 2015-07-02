@@ -33,7 +33,7 @@ exports.home = function(req, res){
 				res.json(anuncios);
 			}
 
-	}).sort({score: -1});
+	}).sort({pontos: -1});
 
 
 };
@@ -102,6 +102,7 @@ exports.instant = function(req, res) {
 	  		//html ='',
 	  		//itens = [];
 
+		console.log('FOI A PESQUISA NO BANCO');
 		mInstant.find({ palavra: r }, { palavra:1, _id:0 }, {limit: 4}, function(err, results) {
 
 

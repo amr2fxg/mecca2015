@@ -3,26 +3,16 @@ var mongoose = require('mongoose');
 
 var anunciosSchema = new mongoose.Schema({
 
-	id_anuncios: Number,
-	id_usuarios: Number,
-	id_anunciostipo: Number,
-	id_categorias: String,
-	renovado: Boolean,
-	titulo: String,
-	subtitulo: String,
+	cleanurl: String,
+	data: { type: Date, default: Date.now },
 	estado: String,
 	quant: Number,
+	subtitulo: String,
+	titulo: String,
 	valor: Number,
-	data: { type: Date, default: Date.now },
-	//hora: Date              ** Reduntante com o campo data
 	vencimento: Date,
-	pagtodinheiro: Boolean,
-	pagtocartao: Boolean,
-	pagtodeposito: Boolean,
-	retiraemmaos: Boolean,
-	garantia: Boolean,
-	fretegratis: Boolean,
-	cleanurl: String
+	patrocinado: Boolean,
+	score: Number
 
 },{collection: 'anuncios'})
 
