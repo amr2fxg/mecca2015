@@ -24,9 +24,10 @@ var express = require('express'),
 	oneDay = 86400, //24 * 60 * 60
 	oneYear = 315576000; // 365 * 24 * 60 * 60
 
-//var	mongooseUri = uriUtil.formatMongoose('mongodb://admin:m3cc4%@ds063218.mongolab.com:63218/mecca');
+// REMOTE DATABASE
+mongoose.connect('mongodb://admin:meccaadmin@ds037252.mongolab.com:37252/heroku_zrc5rl0t', options);
 
-mongoose.connect('mongodb://admin:meccaadmin@ds063218.mongolab.com:63218/mecca2015', options);
+// LOCAL DATABASE
 //mongoose.connect('mongodb://localhost/mecca', options);
 
 var db = mongoose.connection;

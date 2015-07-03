@@ -33,7 +33,7 @@ exports.home = function(req, res){
 				res.json(anuncios);
 			}
 
-	}).sort({pontos: -1});
+	}).sort({score: -1});
 
 
 };
