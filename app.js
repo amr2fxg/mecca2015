@@ -17,7 +17,6 @@ var express = require('express'),
 	io 		= require('./lib/sockets').listen(server),
 
 	mongoose  = require('mongoose'),
-	uriUtil = require('mongodb-uri'),
 
 	options = { server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } }, 
 				replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } } },
